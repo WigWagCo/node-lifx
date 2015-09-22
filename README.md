@@ -70,7 +70,16 @@ Requests general info from a light, this includes color, label and power state. 
 #### `light.getFirmwareVersion(callback)`
 Requests the firmware version from a light (minor and major version). This function is asynchronous. The callback will be provided with two parameters for error and the requested data use `function(error, data) {}`.
 
-#### `light.getHardwareVersion(callback)`
+#### `light.getFirmwareInfo(callback)`
+Requests the additional firmware. This function is asynchronous. The callback will be provided with two parameters for error and the requested data use `function(error, data) {}`.
+
+#### `light.getWifiVersion(callback)`
+Requests the firmware version on LIFX WiFi module. This function is asynchronous. The callback will be provided with two parameters for error and the requested data use `function(error, data) {}`.
+
+#### `light.getWifiInfo(callback)`
+Requests the additional information on WiFi. Currently returns signal strenght and bytes transferred. This function is asynchronous. The callback will be provided with two parameters for error and the requested data use `function(error, data) {}`.
+
+#### `light.getHardware(callback)`
 Requests the hardware version from a light (vendor, product and version). This function is asynchronous. The callback will be provided with two parameters for error and the requested data use `function(error, data) {}`.
 
 ### Target a light
